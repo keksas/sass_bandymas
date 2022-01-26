@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vh;
+  width: 30vw;
+  padding: 5px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.container img:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+/*# sourceMappingURL=style.css.map */

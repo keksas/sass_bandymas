@@ -1,0 +1,23 @@
+@import 'var','mixins';
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    @include myFlexCenter();
+    flex-wrap: wrap;
+
+    img{
+        object-position: center;
+        object-fit: cover;
+        height: 30vh;
+        width: 30vw;
+        padding: $myPadding;
+        @include myFilter(50%);
+        &:hover{
+            @include myFilter(110%);
+        }
+    }
+}
